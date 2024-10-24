@@ -32,6 +32,12 @@ jobs:
         selected: true
 
     -
+        title: Visiting Researcher
+        where: 'Google &mdash; SystemsResearch@Google (SRG)'
+        dates: 2022&ndash;2023
+        selected: true
+
+    -
         title: Assistant Professor
         where: Cornell University &mdash; Department of Computer Science
         dates: 2016&ndash;2022
@@ -69,6 +75,9 @@ jobs:
         dates: 2007
 
 honors:
+    - text: 'Cornell Bowers CIS <a href="https://diversity.cis.cornell.edu">Office of Diversity, Equity, and Inclusion</a>: Computer Science Faculty of the Year, 2024'
+      selected: true
+    - text: 'Distinguished Artifact Award, <a href="https://asplos-conference.org">ASPLOS 2024</a>'
     - text: 'Distinguished Artifact Award, <a href="https://asplos-conference.org">ASPLOS 2023</a>'
     - text: '<a href="https://research.google/outreach/research-scholar-program/recipients/?category=2022">Google Research Scholar Program award</a>, 2022'
       selected: true
@@ -107,17 +116,25 @@ honors:
 teaching:
     - where: Cornell University
       classes:
+          - term: Spring 2025
+            number: CS 6120
+            title: Advanced Compilers
+            desc: This is a PhD-level hands-on course I created about programming language implementation.
+            future: true
+          - term: Fall 2024
+            number: CS 3410
+            title: Computer System Organization and Programming
+            desc: "We are currently revamping the curriculum for the CS major’s core computer systems course. I will co-teach with [Giulia Guidi](https://giuliaguidi.github.io)."
+            current: true
           - term: Spring 2024
             number: CS 4110
             title: Programming Languages and Logics
+            link: https://www.cs.cornell.edu/Courses/cs4110/2024sp/
             desc: "This is Cornell's undergraduate programming languages elective. 4110 is full of content you'd expect to find in a graduate PL course."
-            future: true
           - term: Fall 2023
             number: CS 6120
             title: Advanced Compilers
             link: https://www.cs.cornell.edu/courses/cs6120/2023fa/
-            desc: This is a new PhD-level hands-on course about programming language implementation.
-            current: true
           - term: Spring 2022
             number: CS 6120
             title: Advanced Compilers
@@ -259,16 +276,23 @@ service:
     - |
         Cornell University, Computer Science:
 
+        * Interim director, Computer Science MEng Program: fall 2023
+        * Computer Science Field Advisory Committee: 2023--
         * Instructor Search Committee: 2021--22
-        * [Computer Science Undergraduate Research Program (CSURP)][csurp] organizer: 2021
+        * [Computer Science Undergraduate Research Program (CSURP)](https://www.cs.cornell.edu/information/news/newsitem12037/computer-science-undergraduate-research-program-csurp-convene-summer) organizer: 2021, 2022
         * Department Chair Search Committee: 2020
-        * Ph.D. Admissions Committee: 2015--16, 2016--17, 2017--18, 2018--19, 2019--20, 2020--21
+        * Ph.D. Admissions Committee: 2015--16, 2016--17, 2017--18, 2018--19, 2019--20, 2020--21, 2023--24
         * Programming Languages Retreat, Organizer: 2018, 2019
         * Colloquium Committee: 2017--18
         * Vision Statement Committee: 2017
         * Faculty Recruiting Committee: 2016--17
         * [Programming Languages Discussion Group](http://www.cs.cornell.edu/courses/cs7190/2018fa/), Co-Organizer: 2016--
         * [Machine Learning Hardware Reading Group](http://www.cs.cornell.edu/courses/cs7190/2018fa/), Organizer: 2017--2018
+
+    - |
+        Cornell University:
+
+        * Member, Computer Architecture Faculty Search Committee, Electrical and Computer Engineering: 2023--24
 
     - |
         University of Washington, Computer Science and Engineering:
@@ -289,7 +313,7 @@ committees:
       role: Program committee member
     - venue: ASPLOS
       year: 2024
-      role: Program committee member
+      role: Program committee vice chair
     - venue: YArch
       year: 2023
       role: Program committee member
@@ -448,6 +472,20 @@ committees:
         OOPSLA 2014: <a href="http://2014.splashcon.org/track/splash2014-artifacts">Artifact evaluation committee</a> member
 
 phdcommittees:
+    - name: Zhengyang Liu
+      advisor: John Regehr
+      school: University of Utah
+      defense: 2024
+      link: https://users.cs.utah.edu/~liuz/
+    - name: Yulun Yao
+      advisor: Andrew Myers
+    - name: Nitika Saran
+      advisor: Hakim Weatherspoon
+    - name: Matt Hofmann
+      advisor: Zhiru Zhang
+    - name: Niansong Zhang
+      advisor: Zhiru Zhang
+      link: https://www.zzzdavid.tech
     - name: Suraaj Sureshkannan
       advisor: Andrew Myers
     - name: Hongzheng Chen
@@ -492,12 +530,8 @@ phdcommittees:
       link: https://andrewb1999.github.io
     -
         name: Abhishek Vijaya Kumar
-        advisor: Rachit Agarwal
+        advisor: Rachee Singh
         link: https://www.cs.cornell.edu/~abhishek/
-    -
-        name: Ayaka Yorihiro
-        advisor: Owolabi Legunsen
-        link: https://ayakayorihiro.github.io
     -
         name: Qizhe Cai
         advisor: Rachit Agarwal
@@ -599,6 +633,18 @@ phdcommittees:
         link: http://www.cs.columbia.edu/~melanie/
 
 talks:
+    -
+        title: "Approximating Computer Architecture"
+        where: 'Keynote, Young Architect Workshop (YArch) 2024'
+        link: "https://www.cs.cmu.edu/~yarch2024/"
+        date: 2024-04-28
+        extra:
+          - '[Slides.](https://www.cs.cornell.edu/~asampson/media/yarch2024.pdf)'
+    -
+        title: "The Next 700 Accelerator Design Languages"
+        where: "UIUC Compiler Seminar"
+        link: "https://compilerseminar.web.illinois.edu"
+        date: 2023-10-16
     -
         title: "I Survived Tenure, and So Can You!"
         where: JOBS workshop at MICRO 2022

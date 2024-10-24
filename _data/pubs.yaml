@@ -1,4 +1,16 @@
 -
+    title: 'Unifying Static and Dynamic Intermediate Languages for Accelerator Generators'
+    authors: 'Caleb Kim, Pai Li, Anshuman Mohan, Andrew Butt, Adrian Sampson, and Rachit Nigam'
+    venue: 'OOPSLA 2024'
+    type: conference
+    selected: true
+    url: 'BASE/media/papers/piezo-oopsla2024-preprint.pdf'
+    venue_url: 'https://2024.splashcon.org/track/splash-2024-oopsla'
+    venue_status: 'To appear in'
+    extra:
+      - 'Artifact evaluated!'
+
+-
     title: 'Lightweight, Modular Verification for WebAssembly-to-Native Instruction Selection'
     authors: 'Alexa VanHattum, Monica Pardeshi, Chris Fallin, Adrian Sampson, and Fraser Brown'
     venue: 'ASPLOS 2024'
@@ -6,12 +18,14 @@
     selected: true
     url: 'https://www.cs.cornell.edu/~avh/veri-isle-preprint.pdf'
     venue_url: 'https://www.asplos-conference.org/asplos2024/'
-    pre: true
+    extra:
+      - '[Artifact evaluated!](https://github.com/avanhatt/wasmtime)'
+      - 'Distinguished Artifact Award winner!'
+    note: Distinguished Artifact Award.
 
 -
     title: "Very Large Scale Disintegration"
     authors: "Adrian Sampson"
-    venue: "Wild and Crazy Ideas (WACI) session at ASPLOS 2023"
     type: other
     url: 'https://www.asplos-conference.org/asplos2023/wp-content/uploads/2023/waci/4-vlsd.pdf'
     venue: 'the <a href="https://www.asplos-conference.org/asplos2023/index.html%3Fp=4204.html">Wild and Crazy Ideas (WACI)</a> session at <a href="https://www.asplos-conference.org/asplos2023/">ASPLOS 2023</a>'
@@ -43,6 +57,7 @@
       - '[Local PDF.](BASE/media/papers/cider-asplos2023.pdf)'
       - '[Artifact evaluated!](https://docs.calyxir.org/debug/cider.html)'
       - 'Distinguished Artifact Award winner!'
+    note: Distinguished Artifact Award.
 
 -
     title: 'Performance Left on the Table: An Evaluation of Compiler Auto-Vectorization for RISC-V'
@@ -278,7 +293,6 @@
     url: http://drops.dagstuhl.de/opus/volltexte/2017/7130/
     extra:
      - '[Slides.](BASE/media/opengl-snapl2017-slides.pdf)'
-    selected: true
 
 -
     title: "Approximate Computing: Unlocking Efficiency with Hardware&ndash;Software Co-Design"
@@ -319,7 +333,6 @@
     authors: "Brett Boston, Adrian Sampson, Dan Grossman, and Luis Ceze"
     venue: OOPSLA 2015
     type: conference
-    selected: true
     venue_url: http://2015.splashcon.org/track/oopsla2015
     url: BASE/media/papers/decaf-oopsla2015.pdf
 
@@ -347,18 +360,18 @@
     authors: Thierry Moreau, Mark Wyse, Jacob Nelson, Adrian Sampson, Hadi Esmaeilzadeh, Luis Ceze, and Mark Oskin
     venue: HPCA 2015
     type: conference
-    selected: true
     venue_url: http://darksilicon.org/hpca/
     url: BASE/media/papers/snnap-hpca2015.pdf
+    selected: true
 
 -
     title: Monitoring and Debugging the Quality of Results in Approximate Programs
     authors: Michael Ringenburg, Adrian Sampson, Isaac Ackerman, Luis Ceze, and Dan Grossman
     venue: ASPLOS 2015
     type: conference
-    selected: true
     venue_url: http://asplos15.bilkent.edu.tr
     url: BASE/media/papers/approxdebug-asplos2015.pdf
+    selected: true
 
 -
     title: Expressing and Verifying Probabilistic Assertions

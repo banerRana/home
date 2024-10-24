@@ -391,6 +391,17 @@ img.illus {
     margin: 1em;
 }
 
+@media (prefers-color-scheme: dark) {
+    // Force light background on transparent images.
+    img.lightbg {
+        background-color: white;
+    }
+    // For black-on-white images, invert in dark mode.
+    img.bonw {
+      filter: invert(1);
+    }
+}
+
 .portrait {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
@@ -492,6 +503,7 @@ blockquote {
     padding-top: 30px; /* IE6 workaround*/
     height: 0;
     overflow: hidden;
+    margin: 1em 0;
 }
 .embed iframe,
 .embed object,
@@ -513,7 +525,7 @@ blockquote {
 // Inline code.
 pre, code {
     font-family: $code-font;
-    font-size: ($font-size-base - 4);
+    font-size: 80%;
 }
 code {
     background-color: $code-bg;
@@ -523,6 +535,7 @@ code {
 pre code {
     display: block;
     background: inherit;
+    font-size: inherit;
 
     // Make <pre> code scroll horizontally when it's too wide (e.g., on
     // mobile).
@@ -550,6 +563,7 @@ pre code {
     height: auto;
 }
 .img-responsive {
+    margin: 0 auto;
     @include img-responsive;
 }
 
@@ -590,6 +604,16 @@ figcaption {
     font-size: ceil(($font-size-base * 0.85));
     margin-top: 0.5em;
     margin-bottom: 1em;
+}
+
+// Side-by-side inline figures.
+.figrow {
+    display: flex;
+    justify-content: space-between;
+    figure {
+        float: none;
+        margin: 0;
+    }
 }
 
 // KaTeX fonts. By default, it's too large.
@@ -650,6 +674,13 @@ code {
     .ansi-red {
         font-weight: bold;
         color: #cc1b1b;
+    }
+}
+
+// A dark-mode trick.
+@media (prefers-color-scheme: light) {
+    .dark-only {
+        display: none;
     }
 }
 
